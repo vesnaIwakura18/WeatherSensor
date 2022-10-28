@@ -13,7 +13,7 @@ public class Sensor {
     private int id;
 
     @Column(name = "sensor_name")
-    @NotEmpty(message = "should not be empty")
+    @NotEmpty(message = "Name should not be empty")
     private String name;
 
     @OneToMany(mappedBy = "sensor")
