@@ -16,18 +16,18 @@ public class Measurement {
     private int id;
 
     @Column(name = "measurement_value")
-    @NotNull(message = "should not be empty")
+    @NotNull(message = "Value should not be empty")
     @Min(value = -100, message = "should not be lower that -100")
     @Max(value = 100, message = "should not be greater that +100")
     private float value;
 
     @Column(name = "measurement_is_raining")
-    @NotNull(message = "should not be empty")
+    @NotNull(message = "Raining bool should not be empty")
     private boolean isRaining;
 
     @ManyToOne
     @JoinColumn(name = "sensor_id", referencedColumnName = "sensor_id")
-    @NotNull(message = "should not be empty")
+    @NotNull(message = "Sensor name should not be empty")
     private Sensor sensor;
 
     @Column(name = "a_current_time")
