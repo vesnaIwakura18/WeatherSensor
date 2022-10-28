@@ -5,15 +5,15 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 public class MeasurementDTO {
-    @Min(value = -100, message = "should not be lower that -100")
-    @Max(value = 100, message = "should not be greater that +100")
-    @NotNull(message = "should not be empty")
+    @Min(value = -100, message = "Value should not be lower that -100")
+    @Max(value = 100, message = "Value should not be greater that +100")
+    @NotNull(message = "Value should not be empty")
     private float value;
 
-    @NotNull(message = "should not be empty")
+    @NotNull(message = "Raining bool should not be empty")
     private boolean isRaining;
 
-    @NotNull(message = "should not be empty")
+    @NotNull(message = "Sensor name should not be empty")
     private SensorDTO sensor;
 
     public float getValue() {
