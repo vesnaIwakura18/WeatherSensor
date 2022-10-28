@@ -17,8 +17,8 @@ public class Measurement {
 
     @Column(name = "measurement_value")
     @NotNull(message = "Value should not be empty")
-    @Min(value = -100, message = "should not be lower that -100")
-    @Max(value = 100, message = "should not be greater that +100")
+    @Min(value = -100, message = "Value should not be lower that -100")
+    @Max(value = 100, message = "Value should not be greater that +100")
     private float value;
 
     @Column(name = "measurement_is_raining")
