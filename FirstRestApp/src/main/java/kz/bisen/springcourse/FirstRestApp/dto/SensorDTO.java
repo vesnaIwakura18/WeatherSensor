@@ -3,7 +3,7 @@ package kz.bisen.springcourse.FirstRestApp.dto;
 import javax.validation.constraints.NotEmpty;
 
 public class SensorDTO {
-    @NotEmpty(message = "should not be empty")
+    @NotEmpty(message = "Name should not be empty")
     private String name;
 
     public String getName() {
