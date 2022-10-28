@@ -1,2 +1,2 @@
-# weather-sensor-REST-API
+WeatherSensor
 Service + Client
